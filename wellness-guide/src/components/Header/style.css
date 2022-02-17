@@ -2,11 +2,13 @@
     color: #E9D8A6;
     background-color: #005F73;
 }
+
 h1 {
+    color: #E9D8A6;
     text-decoration: underline;
 }
 
 a {
+    color: #E9D8A6;
     font-size: 28px;
-    color: white;
 }
