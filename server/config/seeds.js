@@ -21,7 +21,7 @@ db.once('open', async () => {
         }
     ]);
     console.log('exercise seeded');
-
+    await Meditation.deleteMany();
     const meditation = await Meditation.insertMany([
         {
             title: 'Breathe',
@@ -40,8 +40,8 @@ db.once('open', async () => {
     ]);
 
     console.log('meditation seeded')
-    
-    const nutrition = Nutrition.insertMany([
+    await Nutrition.deleteMany();
+    const nutrition = await Nutrition.insertMany([
         {
             title: 'Diet',
             description: 'Loose weight',
