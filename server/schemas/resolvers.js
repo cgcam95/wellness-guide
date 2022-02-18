@@ -13,10 +13,8 @@ const resolvers = {
             return await Exercise.find();
         }
 
-    },
-    Mutation: {
-
     }
+
 };
 
 module.exports = resolvers;
