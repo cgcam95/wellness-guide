@@ -23,7 +23,7 @@ Maecenas ut ipsum tincidunt lectus vulputate sodales id vitae tellus. Donec nisi
                 </div>
             </div>
             <div className="row pt-5 border-top">
-                <h2 className="pb-2 text-decoration-underline" id="meditation">Meditation</h2>
+                <Link to="/meditation"><h2 className="pb-2 text-decoration-underline" id="meditation">Meditation</h2></Link>
             </div>
             <div className="row pt-1 pb-4">
                 <div className="col">
@@ -37,7 +37,7 @@ Maecenas ut ipsum tincidunt lectus vulputate sodales id vitae tellus. Donec nisi
                 </div>
             </div>
             <div className="row pt-5 border-top">
-                <h2 className="pb-2 text-decoration-underline" id="exercise">Exercise</h2>
+                <Link to ="/exercise"><h2 className="pb-2 text-decoration-underline" id="exercise">Exercise</h2></Link>
             </div>
             <div className="row pt-1 pb-4">
                 <div className="col">

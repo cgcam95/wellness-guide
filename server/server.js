@@ -39,7 +39,7 @@ const startServer = async () => {
     typeDefs,
     resolvers,
     context: authMiddleware,
-    //plugins: [myPlugin],
+    plugins: [myPlugin]
   });
   await server.start();
   server.applyMiddleware({ app });
