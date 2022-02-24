@@ -40,6 +40,7 @@ const App= () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/nutrition" element={<Nutrition />} />
+        <Route path="/nutrition/:id" element={<Nutrition />} />
         <Route path="/meditation" element={<Meditation />} />
         <Route path="/exercise" element={<Exercise />} />
         <Route path="*" element={<Nomatch />} />
