@@ -23,7 +23,9 @@ const typeDefs = gql`
     type Query {
         exercise: [Exercise]
         nutrition: [Nutrition]
+        nutritionID(_id: ID!): Nutrition
         meditation: [Meditation]
+
     }
 
     type Mutation {

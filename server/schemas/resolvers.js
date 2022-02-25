@@ -11,8 +11,10 @@ const resolvers = {
         },
         exercise: async () => {
             return await Exercise.find();
-        }
-
+        },
+        nutritionID: async (parent, { _id }) => {
+            return await Nutrition.findById(_id);
+        },
     },
     Mutation: {
         updateExercise: async (parent, { _id, description }) => {
