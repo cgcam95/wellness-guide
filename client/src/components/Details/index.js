@@ -4,7 +4,7 @@ import "./style.css";
 
 const Details = (props) => {
     const displayedData = props.details;
-    const { id } = useParams();
+    const { nutritionid } = useParams();
     return(
         <div className="container pb-5">
     
@@ -14,7 +14,7 @@ const Details = (props) => {
     <div className="card-body">
       <h5 className="card-title">{card.title}</h5>
       <p className="card-text">{card.description}</p>
-      <Link to={`nutrition/${id}`} className="btn btn-primary">{id}</Link>
+      {/*<Link to={nutritionid} className="btn btn-primary">More Details</Link> */}
     </div>
   </div>)}
   </div>
