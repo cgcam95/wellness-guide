@@ -15,6 +15,12 @@ const resolvers = {
         nutritionID: async (parent, { _id }) => {
             return await Nutrition.findById(_id);
         },
+        exerciseID: async (parent, {_id }) => {
+            return await Exercise.findById(_id);
+        },
+        meditationID: async (parent, {_id }) => {
+            return await Meditation.findById(_id);
+        }
     },
     Mutation: {
         updateExercise: async (parent, { _id, description }) => {

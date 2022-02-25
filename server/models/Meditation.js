@@ -20,3 +20,4 @@ const meditationSchema = new Schema({
 const Meditation = mongoose.model("Meditation", meditationSchema);
 
 module.exports = Meditation;
+

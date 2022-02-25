@@ -5,7 +5,11 @@ import "./style.css";
 const Details = (props) => {
     const displayedData = props.details;
     const { nutritionid } = useParams();
+    const { exerciseid } = useParams();
+    const { meditationid} = useParams();
     console.log(nutritionid);
+    console.log(exerciseid);
+    console.log(meditationid);
     return(
         <div className="container pb-5">
     

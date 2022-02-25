@@ -22,9 +22,11 @@ const typeDefs = gql`
 
     type Query {
         exercise: [Exercise]
+        exerciseID(_id: ID!): Exercise
         nutrition: [Nutrition]
         nutritionID(_id: ID!): Nutrition
         meditation: [Meditation]
+        meditationID(_id: ID!): Meditation
 
     }
 

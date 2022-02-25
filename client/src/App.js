@@ -6,6 +6,8 @@ import Nomatch from './pages/Nomatch';
 import Exercise from './pages/Exercise';
 import Meditation from './pages/Meditation';
 import NutritionDetails from './components/NutritionDetails';
+import ExerciseDetails from './components/ExerciseDetails';
+import MeditationDetails from './components/MeditationDetails';
 import { setContext } from '@apollo/client/link/context';
 import './App.css';
 import {
@@ -43,8 +45,12 @@ const App= () => {
         <Route path="/nutrition" element={<Nutrition />}>
           <Route path=":nutritionid" element={<NutritionDetails />} />
         </ Route>
-        <Route path="/meditation" element={<Meditation />} />
-        <Route path="/exercise" element={<Exercise />} />
+        <Route path="/meditation" element={<Meditation />} >
+          <Route path=":meditationid" element={<MeditationDetails />} />
+          </Route>
+        <Route path="/exercise" element={<Exercise />} >
+            <Route path=":exerciseid" element={<ExerciseDetails />} />
+            </Route>
         <Route path="*" element={<Nomatch />} />
       </Routes>
     </Router>
