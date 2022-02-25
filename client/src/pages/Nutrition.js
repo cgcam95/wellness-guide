@@ -6,6 +6,7 @@ import { QUERY_ALL_NUTRITION } from "../utils/queries";
 import { Outlet, useParams } from "react-router-dom";
 
 const Nutrition = () => {
+    
     const { loading, data } = useQuery(QUERY_ALL_NUTRITION);
 
     return(
