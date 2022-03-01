@@ -10,12 +10,11 @@ const NutritionDetails = () => {
     const {loading, data } = useQuery(QUERY_NUTRITION_ID, {
         variables: {id: nutritionid}
     });
-
+     
     return(
         <>
              {<div>{loading ? <h2>LOADING</h2> : <h2>{data.nutritionID.title}</h2>}</div> }
              {loading ? null : console.log(nutritionid+" "+data.nutritionID.title)}
-
             <Outlet />
         </>
     )

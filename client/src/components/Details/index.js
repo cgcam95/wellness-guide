@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link,useParams } from 'react-router-dom'
 import "./style.css";
 
 const Details = (props) => {
+  
     const displayedData = props.details;
-    const { nutritionid } = useParams();
+    /*const { nutritionid } = useParams();
     const { exerciseid } = useParams();
     const { meditationid} = useParams();
-    console.log(nutritionid);
-    console.log(exerciseid);
-    console.log(meditationid);
+    */
+  /* const setDetails = () => {
+     useState({boolDetails: false})};
+*/
+    //console.log(props.details.boolDetails);
+
     return(
         <div className="container pb-5">
     
