@@ -1,21 +1,27 @@
 import { useQuery } from "@apollo/client";
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Details from "../components/Details";
 import { QUERY_ALL_NUTRITION } from "../utils/queries";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 const Nutrition = () => {
     
     const { loading, data } = useQuery(QUERY_ALL_NUTRITION);
+    const location = useLocation();
 
-    const [boolDetails] = useState(true);
-
+    const checkLocation = () => {
+        if (location.pathname === '/nutrition'){
+          return true;
+        } else {
+          return false;
+        }
+      }
     return(
         <>
             <Header />
             <br />
-            <div>{loading ? <h2>LOADING</h2> : <Details details={data.nutrition} />}</div>
+            <div>{checkLocation() && (loading ? <h2>LOADING</h2> : <Details details={data.nutrition} />)}</div>
             <Outlet />
         </>
     )
