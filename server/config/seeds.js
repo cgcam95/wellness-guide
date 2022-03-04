@@ -26,10 +26,10 @@ db.once('open', async () => {
         {
             title: 'Breathe',
             description: 'Focus on breathing',
-            image: 'breath.jpg'
+            image: 'breathe.jpg'
         },
-        {   title: 'Mindfullness',
-            description: 'Be mindfull of thoughts',
+        {   title: 'Mindfulness',
+            description: 'Be mindful of thoughts',
             image: 'mindful.jpg'
         },
         {
