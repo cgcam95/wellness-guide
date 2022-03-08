@@ -14,32 +14,32 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-h1, a {
+h1, .a-header{
     font-size: 20px;
 }
 }
 
 @media screen and (max-width: 610px) {
-    h1, a {
-        font-size: 16px
+    h1, .a-header {
+        font-size: 16px;
         }
 }
 
 
 @media screen and (max-width: 534px) {
-    h1, a {
-        font-size: 12px
+    h1, .a-header {
+        font-size: 12px;
         }
 }
 
 @media screen and (max-width: 453px) {
-    h1, a {
-        font-size: 10px
+    h1, .a-header{
+        font-size: 10px;
         }
 }
 
 @media screen and (max-width: 411px) {
-    h1, a {
-        font-size: 6px
+    h1, .a-header {
+        font-size: 6px;
         }
 }
