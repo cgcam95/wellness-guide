@@ -13,7 +13,12 @@ const NutritionDetails = () => {
      
     return(
         <>
-             {<div>{loading ? <h2>LOADING</h2> : <h2>{data.nutritionID.title}</h2>}</div> }
+             {<div>{loading ? <h2>LOADING</h2> : <div>
+                <h2 className='text-center'>{data.nutritionID.title}</h2>\
+                <img className="img-responsive center-block d-block mx-auto" src={'/assets/'+data.nutritionID.image} alt={data.nutritionID.title}/>
+                <p className="mt-3 mx-5">{data.nutritionID.description}</p>
+            </div>
+             }</div> }
              {loading ? null : console.log(nutritionid+" "+data.nutritionID.title)}
             <Outlet />
         </>

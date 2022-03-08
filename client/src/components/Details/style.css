@@ -1,3 +1,9 @@
 .imgstyle{
     max-width: 10%;
 }
+.p-maxwidth {
+    overflow: hidden;
+    max-width: 60ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

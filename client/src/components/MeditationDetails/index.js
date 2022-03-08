@@ -13,11 +13,15 @@ const MeditationDetails = () => {
 
     return(
         <>
-            {<div> {loading ? <h2>LOADING</h2> : <h2>{data.meditationID.title}</h2>} </div>}
-
+            {<div>{loading ? <h2>LOADING</h2> : <div>
+                <h2 className='text-center'>{data.meditationID.title}</h2>\
+                <img className="img-responsive center-block d-block mx-auto" src={'/assets/'+data.meditationID.image} alt={data.meditationID.title}/>
+                <p className="mt-3 mx-5">{data.meditationID.description}</p>
+                </div>
+            }</div>}
             <Outlet />
         </>
     )
-}
+    }
 
 export default MeditationDetails;

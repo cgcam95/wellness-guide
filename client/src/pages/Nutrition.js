@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import React from "react";
+import React, {useEffect} from "react";
 import Header from "../components/Header";
 import Details from "../components/Details";
 import { QUERY_ALL_NUTRITION } from "../utils/queries";
@@ -17,6 +17,11 @@ const Nutrition = () => {
           return false;
         }
       }
+
+      useEffect(() => {
+        document.title = "Wellness Guide | Nutrition";  
+      }, []);
+
     return(
         <>
             <Header />

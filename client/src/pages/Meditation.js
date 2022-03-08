@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "../components/Header";
 import Details from '../components/Details';
 import { QUERY_ALL_MEDITATION } from '../utils/queries';
@@ -7,7 +7,11 @@ import { Outlet, useLocation } from 'react-router-dom';
 
 const Meditation = () => {
     const {loading, data } =useQuery(QUERY_ALL_MEDITATION);
-    
+
+    useEffect(() => {
+      document.title = "Wellness Guide | Meditation";  
+    }, []);
+
     const location = useLocation();
 
     const checkLocation = () => {

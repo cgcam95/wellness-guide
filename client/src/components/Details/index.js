@@ -15,18 +15,18 @@ const Details = (props) => {
     //console.log(props.details.boolDetails);
 
     return(
-        <div className="container pb-5">
+  <div className="container pb-5">
     
-    <div className="row"> {displayedData.map((card) =>
-    <div className="card col-3 mx-3"  key={card.title.concat("-div")}>
-    <div className="card-body">
-      <h5 className="card-title">{card.title}</h5>
-      <img className="card-img-top"  src={'/assets/'+card.image} alt={card.image}/>
-      <p className="card-text">{card.description}</p>
-      <Link to={card._id} className="btn btn-primary">More Details</Link>
+    <div className="row align-items-center"> {displayedData.map((card) =>
+      <div className="card col-3 mx-auto"  key={card.title.concat("-div")}>
+          <div className="card-body">
+            <h5 className="card-title">{card.title}</h5>
+            <img className="card-img-top"  src={'/assets/'+card.image} alt={card.image}/>
+            <p className="card-text p-maxwidth">{card.description}</p>
+            <Link to={card._id} className="btn btn-primary">More Details</Link>
+          </div>
+      </div>)}
     </div>
-  </div>)}
-  </div>
   </div>
     )
 }
