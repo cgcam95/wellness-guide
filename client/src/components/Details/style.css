@@ -8,28 +8,30 @@
     white-space: nowrap;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     h5, a {
         font-size: 14px;
     }
-   
+    .card-padding {
+        margin-top: 3rem ;
+    }
     }
     
     @media screen and (max-width: 610px) {
-        h1, a {
+        h5, a {
             font-size: 16px
             }
     }
     
-    
     @media screen and (max-width: 534px) {
-        h1, a {
+        h5, a {
             font-size: 12px
             }
     }
-    
-    @media screen and (max-width: 453px) {
-        h1, a {
-            font-size: 10px
+    @media screen and (max-width: 390px) {
+        h5, a {
+            font-size: 8px
             }
     }
+    
+  
