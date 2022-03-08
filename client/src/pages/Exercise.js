@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "../components/Header";
 import Details from '../components/Details';
 import { QUERY_ALL_EXERCISE } from '../utils/queries';
@@ -7,6 +7,10 @@ import { Outlet, useLocation } from 'react-router-dom';
 
 const Exercise = () => {
     const { loading, data } = useQuery(QUERY_ALL_EXERCISE);
+
+    useEffect(() => {
+      document.title = "Wellness Guide | Exercise";  
+    }, []);
 
     const location = useLocation();
 

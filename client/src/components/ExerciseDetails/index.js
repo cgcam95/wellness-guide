@@ -12,8 +12,12 @@ const ExerciseDetails = () => {
 
     return(
         <>
-        {<div> {loading ? <h2>LOADING</h2> : <h2>{data.exerciseID.title}</h2>}</div>}
-
+            {<div>{loading ? <h2>LOADING</h2> : <div>
+                <h2 className='text-center'>{data.exerciseID.title}</h2>\
+                <img className="img-responsive center-block d-block mx-auto" src={'/assets/'+data.exerciseID.image} alt={data.exerciseID.title}/>
+                <p className="mt-3 mx-5">{data.exerciseID.description}</p>
+                </div>
+            }</div>}
         <Outlet />
         </>
     )
