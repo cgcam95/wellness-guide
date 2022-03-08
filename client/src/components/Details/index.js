@@ -19,11 +19,11 @@ const Details = (props) => {
     
     <div className="row align-items-center"> {displayedData.map((card) =>
       <div className="card col-3 mx-auto"  key={card.title.concat("-div")}>
-          <div className="card-body">
+          <div className="card-body align-items-center">
             <h5 className="card-title">{card.title}</h5>
             <img className="card-img-top"  src={'/assets/'+card.image} alt={card.image}/>
             <p className="card-text p-maxwidth">{card.description}</p>
-            <Link to={card._id} className="btn btn-primary">More Details</Link>
+            <Link to={card._id} className="btn btn-primary mx-auto">More Details</Link>
           </div>
       </div>)}
     </div>

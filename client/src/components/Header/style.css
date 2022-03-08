@@ -12,3 +12,28 @@ a {
     color: #E9D8A6;
     font-size: 28px;
 }
+
+@media screen and (max-width: 767px) {
+h1, a {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 610px) {
+    h1, a {
+        font-size: 16px
+        }
+}
+
+
+@media screen and (max-width: 534px) {
+    h1, a {
+        font-size: 12px
+        }
+}
+
+@media screen and (max-width: 453px) {
+    h1, a {
+        font-size: 10px
+        }
+}

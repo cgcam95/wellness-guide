@@ -7,3 +7,29 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
+  @media screen and (max-width: 767px) {
+    h5, a {
+        font-size: 14px;
+    }
+   
+    }
+    
+    @media screen and (max-width: 610px) {
+        h1, a {
+            font-size: 16px
+            }
+    }
+    
+    
+    @media screen and (max-width: 534px) {
+        h1, a {
+            font-size: 12px
+            }
+    }
+    
+    @media screen and (max-width: 453px) {
+        h1, a {
+            font-size: 10px
+            }
+    }
